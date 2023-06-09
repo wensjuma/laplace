@@ -9,10 +9,10 @@ import {
   Typography,
 } from "@mui/material";
 import Logo from "../../images/laplaceLogo.jpeg"
-
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyles.css";
+import { CallEndRounded, EmailRounded, WhatsApp } from "@mui/icons-material";
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   // hndle menu click
@@ -28,7 +28,7 @@ const Header = () => {
         component="div"
         sx={{ flexGrow: 1, my: 2 }}
       >
-        <img src={Logo} style={{borderRadius:50, backgroundSize: "cover"}} alt="logo" height={"60"} width="110" />
+        <img src={Logo} style={{ borderRadius: 50, backgroundSize: "cover" }} alt="logo" height={"60"} width="110" />
       </Typography>
       <Divider />
       <ul className="mobile-navigation">
@@ -44,7 +44,19 @@ const Header = () => {
           <NavLink to={"/about"}>About</NavLink>
         </li>
         <li>
-          <NavLink to={"/contact"}>Contact</NavLink>
+          <NavLink to={"https://api.whatsapp.com/send?phone=254717649909"}>
+            <Typography sx={{ color: "#2e7d32" }}> <WhatsApp /> +2547-17-649-909</Typography>
+          </NavLink>
+          <li>
+            <NavLink>
+              <Typography sx={{ color: "#0172bc" }}> <CallEndRounded /> +2547-17-649-909</Typography>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink>
+              <Typography sx={{ color: "#2e7d32" }} variant="h6"><EmailRounded /> email@laplace.com</Typography>
+            </NavLink>
+          </li>
         </li>
       </ul>
     </Box>
@@ -52,7 +64,7 @@ const Header = () => {
   return (
     <>
       <Box>
-        <AppBar component={"nav"} sx={{ bgcolor: "#ffffff" }}>
+        <AppBar component={"nav"} sx={{ bgcolor: "#ffffff", boxShadow: "none" }}>
           <Toolbar>
             <IconButton
               color="inherit"
@@ -72,8 +84,8 @@ const Header = () => {
               component="div"
               sx={{ flexGrow: 1 }}
             >
-              <img src={Logo} style={{borderRadius:50, backgroundSize: "cover"}} alt="logo" height={"60"} width="110" />
-             {/* <strong style={{paddingBottom:"70px !important", lineHeight: 3}}> LAPLACE</strong> */}
+              <img src={Logo} style={{ borderRadius: 50, backgroundSize: "cover" }} alt="logo" height={"60"} width="110" />
+              {/* <strong style={{paddingBottom:"70px !important", lineHeight: 3}}> LAPLACE</strong> */}
             </Typography>
 
 
@@ -85,13 +97,30 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/menu"}>Menu</NavLink>
+                  <NavLink to={"/products"}>Our Products</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/about"}>About</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/contact"}>Contact</NavLink>
+                </li>
+                <li>
+                  <NavLink>
+                    <Typography sx={{ color: "#0172bc" }}> <CallEndRounded /> +2547-17-649-909</Typography>
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to={"https://api.whatsapp.com/send?phone=254717649909"}>
+                    {/* <Typography sx={{ color: "#0172bc" }}> <CallEndRounded /> +2547-17-649-909</Typography> */}
+                    <Typography sx={{ color: "#2e7d32" }}> <WhatsApp /> +2547-17-649-909</Typography>
+                  </NavLink>
+                  {/* <Typography variant="h6" sx={{ color: "#2e7d32" }}> <WhatsApp /> +2547-17-649-909</Typography> */}
+                </li>
+                <li>
+                  <NavLink>
+                    <Typography sx={{ color: "#2e7d32" }} variant="h6"><EmailRounded /> email@laplace.com</Typography>
+                  </NavLink>
                 </li>
               </ul>
             </Box>

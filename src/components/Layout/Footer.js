@@ -1,19 +1,17 @@
 import React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import { Grid, Link } from "@mui/material";
 import { Box, Container, Typography } from "@mui/material";
 import { Facebook, WhatsApp } from "@mui/icons-material";
-import { red } from '@mui/material/colors';
 
-const color = red[500];
+
 const Footer = () => {
   return (
     <>
       <Box
         sx={{
+     
           backgroundColor: (theme) =>
             theme.palette.mode === "light"
               ? theme.palette.grey[200]
@@ -24,9 +22,6 @@ const Footer = () => {
       >
         <Container maxWidth="sm">
           <Grid container>
-            {/* <Grid item xs={12} sm={12} lg={6} xl={6}>
-
-          </Grid> */}
             <Grid item xs={12} sm={12} lg={12} xl={12}>
               <Typography sx={{ padding:2 }} align="center">
                 <Link color="inherit" href="https://your-website.com/">

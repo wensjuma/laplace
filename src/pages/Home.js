@@ -1,18 +1,13 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
 import { Link } from "react-router-dom";
-import Sketchy from "../images/test.svg"
-import Sketchy1 from "../images/gsk.png"
-import Sketchy2 from "../images/gsk1.png"
 import "../styles/HomeStyles.css";
-import { Button, Typography, Grid, Card } from "@mui/material";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Typography, Card } from "@mui/material";
 import { OurServices } from "../components/Body/Services";
 import { Paper, Box } from "@mui/material";
 import Const1 from "../images/Cont4.jpg"
 import Const2 from "../images/Cont5.jpg"
 import Const3 from "../images/Constr6.jpg"
-import { ContactUs } from "../components/Body/ContactUs";
 
 import Carousel from "react-material-ui-carousel";
 const items = [
@@ -145,21 +140,13 @@ function Item(props) {
         opacity: 0.3,
         "@media only screen and (max-width: 600px)": {
           height: 350,
-          marginTop: "0px",
           marginTop:5
         }
       }}
       />
-      {/* <img style={{
-        borderRadius: 10,
-        opacity: 0.3,
-        
-      }}
      
-        width={'100%'} height={700} alt="" src={props.item.img}></img> */}
       <Card
         sx={{
-          // zIndex:999,
           marginTop: "-200px",
           color: "#ffffff",
           marginLeft: 20,

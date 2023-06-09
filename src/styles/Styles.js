@@ -44,8 +44,9 @@ export const RoundButton = styled(Button)(() => ({
     padding: 6,
     alignContent:"flex-end",
     backgroundColor: "#007b55",
-    "&: hover":{
-        backgroundColor: "#007b55",
+    "&:hover":{
+      color:'#ffffff',
+      backgroundColor: "#2e7d32"
     }
 
 }));
@@ -56,7 +57,11 @@ export const SubmitButton= styled(Button)(()=>({
     marginBottom: 10,
     padding: 10,
     borderRadius:25,
-    backgroundColor: "#007b55",
+    color: "#ffffff",
+    "&:hover":{
+      color:'#ffffff',
+      backgroundColor: "#2e7d32"
+    }
 }))
 export const AuthCard= styled(Card)(()=>({
     padding: "35px", 
@@ -70,8 +75,8 @@ export const ServiceCard= styled(Card)(()=>({
     margin:6,
     boxShadow: 0,
     borderRadius: 6,
-    minHeight:350,
-    maxHeight: 350,
+    minHeight:"auto",
+    maxHeight: "auto",
     "&:hover":{
       transition: "all 0.9s ease-out",
       boxShadow: "0px 4px 8px rgba(38, 38, 38, 0.2)",
@@ -84,6 +89,17 @@ export const ServiceCard= styled(Card)(()=>({
   }
 
 
+}))
+export const MoreButton = styled(Button)(({theme})=>({
+  float: "right",
+  backgroundColor: theme.palette.success,
+  borderRadius: 25,
+  marginTop: 5,
+  "&:hover":{
+    color:'#ffffff',
+    backgroundColor: "#2e7d32"
+  }
+  
 }))
 export const StyledTextarea = styled(TextareaAutosize)(
     ({ theme }) => `

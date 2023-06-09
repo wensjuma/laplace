@@ -16,7 +16,7 @@ import {
     Dialog
 } from "@mui/material";
 import { useState, useEffect } from "react";
-import { StyledDivider, SubmitButton, StyledTextField } from "./../styles/Styles";
+import { StyledDivider, SubmitButton,MoreButton, StyledTextField } from "./../styles/Styles";
 
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
@@ -95,9 +95,9 @@ const Details = (props) => {
                                 <Typography variant="h6" color="textPrimary" gutterBottom component={"div"}>
 
                                     <Link to={`https://api.whatsapp.com/send?phone=254717649909&text=${"Hi, I would like to make an inquiry about *"+menu.name +' @ '+ menu.price+'*'}`}>
-                                        <Button color="success" sx={{ padding: 2, borderRadius: 10 }} variant="outlined">
-                                            <WhatsAppIcon color="success" /> &nbsp; WhatsApp Us
-                                        </Button>
+                                        <MoreButton color="success" sx={{ padding: 2, borderRadius: 10 }} variant="outlined">
+                                            <WhatsAppIcon sx={{"&:hover":{color: '#ffffff'}}} color="success" /> &nbsp; WhatsApp Us
+                                        </MoreButton>
                                     </Link>
                                 </Typography>
                                 <Button />
@@ -122,9 +122,9 @@ const Details = (props) => {
                         sunt in culpa qui officia deserunt mollit anim id est laborum."
                         <StyledDivider sx={{ margin: 2 }}></StyledDivider>
 
-                        <Button color="success" sx={{ padding: 1, width: 150, borderRadius: 25 }} onClick={handleClickOpen} variant="contained">
+                        <MoreButton color="success" sx={{ padding: 1, width: 150, borderRadius: 25 }} onClick={handleClickOpen} variant="outlined">
                             Engage
-                        </Button>
+                        </MoreButton>
                     </Typography>
                 </Grid>
                 <Grid item xs={1} md={2} lg={2}>
@@ -174,9 +174,9 @@ const Details = (props) => {
                     <label htmlFor="select-image">
 
                         <Typography> Upload your construction plan (Optional)</Typography>
-                        <Button variant="outlined" sx={{ padding: 1, width: "100%" }} color="primary" component="span">
+                        <MoreButton variant="outlined" sx={{ padding: 1, width: "100%" }} color="primary" component="span">
                             <UploadFileIcon /> &nbsp; &nbsp; Upload Plan
-                        </Button>
+                        </MoreButton>
                     </label>
 
                 </DialogContent>
@@ -185,7 +185,7 @@ const Details = (props) => {
                 <DialogActions>
                     {/* <Button variant="text" onClick={handleClose}>Cancel</Button> */}
 
-                    <SubmitButton color="success" variant="contained" sx={{ padding: 1, width: "100%" }} onClick={handleClose}>Submit</SubmitButton>
+                    <SubmitButton color="success" variant="outlined" sx={{ padding: 1, width: "100%" }} onClick={handleClose}>Submit</SubmitButton>
                 </DialogActions>
             </Dialog>
 

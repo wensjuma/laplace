@@ -14,6 +14,7 @@ import {
   Typography,
 } from "@mui/material";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { ArrowBackIosNewRounded, ArrowForwardIos, ArrowForwardIosOutlined, ArrowForwardIosRounded, ArrowForwardIosSharp } from "@mui/icons-material";
 
 
 const Menu = () => {
@@ -53,7 +54,7 @@ const Menu = () => {
                 </Button> */}
                   <Link
                     to={`/details/${menu.name}`} state={{ data: menu }}
-                  > <Button sx={{padding: 1, minWidth: 150, borderRadius:25}} color="success" variant="contained">More <ArrowForwardIcon /> </Button></Link>
+                  > <Button sx={{padding: 1, minWidth: 150, borderRadius:25}} color="success" variant="outlined">View Product &nbsp; <ArrowForwardIosRounded /> </Button></Link>
                 </CardContent>
               </CardActionArea>
             </Card>

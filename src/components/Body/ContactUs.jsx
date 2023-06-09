@@ -11,6 +11,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import ContactImg from '../../images/mycontact-bg.png'
 import "../../styles/HomeStyles.css"
+import Layout from "../Layout/Layout";
 
 
 const SCard = styled(Card)(() => ({
@@ -25,7 +26,8 @@ const SCard = styled(Card)(() => ({
 export const ContactUs = () => {
     return (
         <>
-            <Grid container spacing={3} sx={{}}>
+        <Layout>
+        <Grid container spacing={3} sx={{}}>
                 <Grid item xs={1} md={1} lg={1}></Grid>
                 <Grid item xs={12} md={10} lg={10}>
 
@@ -73,7 +75,7 @@ export const ContactUs = () => {
 
                                 </StyledTextarea>
                                 <StyledDivider></StyledDivider>
-                                <SubmitButton variant="contained" color="success">Submit Message &nbsp; <SendIcon /></SubmitButton>
+                                <SubmitButton variant="outlined" color="success">Submit Message &nbsp; <SendIcon /></SubmitButton>
                             </Grid>
 
 
@@ -85,6 +87,7 @@ export const ContactUs = () => {
                 <Grid item xs={1} md={1} lg={1}></Grid>
             </Grid>
 
+        </Layout>
 
         </>
     )

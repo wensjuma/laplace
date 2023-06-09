@@ -5,8 +5,11 @@ import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import Pagenotfound from "./pages/Pagenotfound";
 import Details  from "./pages/Details"
+import QuotationForm from "./components/quotation/QuotationForm";
+import ProductCategories  from "./components/Products/ProductsCategories"
 import { Register } from "./pages/auth/Register";
 import { Login } from "./pages/auth/Login";
+import ViewProduct from "./components/Products/ViewProduct"
 function App() {
   return (
     <div>
@@ -19,6 +22,9 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/details/:id" element={<Details  />} />
+          <Route path="/product/:id" element={<ViewProduct />} />
+          <Route path="/get-quotation" element={<QuotationForm  />} />
+          <Route path="/our-products" element={<ProductCategories  />} />
           <Route path="*" element={<Pagenotfound />} />
         </Routes>
       </BrowserRouter>
