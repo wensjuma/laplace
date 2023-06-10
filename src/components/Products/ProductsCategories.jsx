@@ -6,6 +6,10 @@ import { ArrowForwardIosRounded } from "@mui/icons-material";
 import BeamBlock from "../../images/beamblock.jpg"
 import Precast from "../../images/Precast.jpeg"
 import Floor from "../../images/floors.jpg"
+import { getProducts } from "../../data/externalContent";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
 const products = [
     {
         name: "Walls",
@@ -51,6 +55,15 @@ const StyledPaper = styled(Paper)(() => ({
     },
 }))
 const ProductCategories = () => {
+    // const [products, setProducts] = useState([]);
+    // useEffect(()=>{
+    //     const fetchProducts =async()=>{
+    //         const result = await axios.post("http://localhost:8850/api/v1/eco/get-products");
+    //         console.log(result.data);
+    //         setProducts(result.data) 
+    //     }
+    //     fetchProducts();
+    // },[]);
     return (
         <Layout>
             <div style={{
