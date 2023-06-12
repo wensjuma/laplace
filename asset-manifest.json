@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/laplace/static/css/main.c4c33a9f.css",
-    "main.js": "/laplace/static/js/main.3c3fb2b6.js",
+    "main.css": "/laplace/static/css/main.1c10fca2.css",
+    "main.js": "/laplace/static/js/main.7623f15a.js",
     "static/js/787.d6034319.chunk.js": "/laplace/static/js/787.d6034319.chunk.js",
     "static/media/blocks.jpg": "/laplace/static/media/blocks.e5f62fa300cd3c2b29e0.jpg",
     "static/media/beamblock.jpg": "/laplace/static/media/beamblock.29c49db0aada9fafa7c9.jpg",
@@ -14,15 +14,18 @@
     "static/media/floors.jpg": "/laplace/static/media/floors.d2f4cbcf13848399b272.jpg",
     "static/media/steelrod.jpg": "/laplace/static/media/steelrod.e59c20a757b999573f3f.jpg",
     "static/media/laplaceLogo.jpeg": "/laplace/static/media/laplaceLogo.47008a82604855d7a30a.jpeg",
+    "static/media/avatar1.png": "/laplace/static/media/avatar1.cc5ef1c83af71136224b.png",
+    "static/media/avatar2.jpg": "/laplace/static/media/avatar2.4a793479ccc93ef595bb.jpg",
     "static/media/architecture.png": "/laplace/static/media/architecture.467ca51fa53c11621bc5.png",
+    "static/media/avatar3.jpg": "/laplace/static/media/avatar3.463f823909c29003954c.jpg",
     "static/media/buildmaterial.png": "/laplace/static/media/buildmaterial.b220cfbb15c03c8a650e.png",
     "index.html": "/laplace/index.html",
-    "main.c4c33a9f.css.map": "/laplace/static/css/main.c4c33a9f.css.map",
-    "main.3c3fb2b6.js.map": "/laplace/static/js/main.3c3fb2b6.js.map",
+    "main.1c10fca2.css.map": "/laplace/static/css/main.1c10fca2.css.map",
+    "main.7623f15a.js.map": "/laplace/static/js/main.7623f15a.js.map",
     "787.d6034319.chunk.js.map": "/laplace/static/js/787.d6034319.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4c33a9f.css",
-    "static/js/main.3c3fb2b6.js"
+    "static/css/main.1c10fca2.css",
+    "static/js/main.7623f15a.js"
   ]
 }
