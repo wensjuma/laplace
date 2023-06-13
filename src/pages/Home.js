@@ -8,8 +8,8 @@ import { Paper, Box } from "@mui/material";
 import Const1 from "../images/Cont4.jpg"
 import Const2 from "../images/Cont5.jpg"
 import Const3 from "../images/Constr6.jpg"
-
 import Carousel from "react-material-ui-carousel";
+
 const items = [
   {
     name: "Building Materials",
@@ -98,7 +98,18 @@ const Home = () => {
 
       </div> */}
       <br />
-      <Carousel sx={{ zIndex: "-999" }} >
+      <Carousel 
+             autoPlay={true}
+             swipe={true}
+             indicators={true}
+             indicatorContainerProps={{
+               style: {
+                 zIndex: 1,
+                 marginTop: "-20px",
+                 position: "relative"
+               }
+             }} 
+      sx={{ zIndex: "-999" }} >
         {
           items.map((item, i) => <Item key={i} item={item} />)
         }

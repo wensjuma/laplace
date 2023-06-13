@@ -59,6 +59,9 @@
   color: "#26743a";
   font-family: "cursive";
 }
+.icon{
+  vertical-align: middle;
+}
 
 /* mobile view  */
 @media only screen and (max-width: 600px) {

@@ -68,7 +68,8 @@ const ProductCategories = () => {
         <Layout>
             <div style={{
                 backgroundImage: "linear-gradient(#86b8df,#70a1d3,#0172bc)",
-                height: '100vh', padding: 20,
+                height: '100vh', 
+                padding: 20,
                 boxShadow: 0,
                 borderBottomRightRadius: "25%",
                 borderTopLeftRadius: "25%"
