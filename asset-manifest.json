@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/laplace/static/css/main.b8ee1a7d.css",
-    "main.js": "/laplace/static/js/main.fae8d842.js",
+    "main.css": "/laplace/static/css/main.0808cf6e.css",
+    "main.js": "/laplace/static/js/main.195107e2.js",
     "static/js/787.d6034319.chunk.js": "/laplace/static/js/787.d6034319.chunk.js",
     "static/media/blocks.jpg": "/laplace/static/media/blocks.e5f62fa300cd3c2b29e0.jpg",
     "static/media/beamblock.jpg": "/laplace/static/media/beamblock.29c49db0aada9fafa7c9.jpg",
@@ -22,12 +22,12 @@
     "static/media/avatar2.jpg": "/laplace/static/media/avatar2.4a793479ccc93ef595bb.jpg",
     "static/media/avatar3.jpg": "/laplace/static/media/avatar3.463f823909c29003954c.jpg",
     "index.html": "/laplace/index.html",
-    "main.b8ee1a7d.css.map": "/laplace/static/css/main.b8ee1a7d.css.map",
-    "main.fae8d842.js.map": "/laplace/static/js/main.fae8d842.js.map",
+    "main.0808cf6e.css.map": "/laplace/static/css/main.0808cf6e.css.map",
+    "main.195107e2.js.map": "/laplace/static/js/main.195107e2.js.map",
     "787.d6034319.chunk.js.map": "/laplace/static/js/787.d6034319.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8ee1a7d.css",
-    "static/js/main.fae8d842.js"
+    "static/css/main.0808cf6e.css",
+    "static/js/main.195107e2.js"
   ]
 }
