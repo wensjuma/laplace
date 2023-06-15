@@ -1,14 +1,11 @@
 import styled from "@emotion/styled";
-import { Container, Grid, Paper, Typography } from "@mui/material"
+import { Container, Grid, Paper, Card, Button, Typography } from "@mui/material"
 import { Link } from "react-router-dom";
 import Layout from "../Layout/Layout";
 import { ArrowForwardIosRounded } from "@mui/icons-material";
 import BeamBlock from "../../images/beamblock.jpg"
 import Precast from "../../images/Precast.jpeg"
 import Floor from "../../images/floors.jpg"
-import { getProducts } from "../../data/externalContent";
-import { useEffect, useState } from "react";
-import axios from "axios";
 
 const products = [
     {
@@ -48,10 +45,9 @@ const StyledPaper = styled(Paper)(() => ({
         fontSize: 23,
         color: "#ffffff",
         boxShadow: '0 1px 10px #ffffff',
-        transform: 'scale(1.05)',
+        transform: 'scale(1.02)',
         transition: '1s',
-        borderRadius: 15
-
+        borderRadius: 10
     },
 }))
 const ProductCategories = () => {
@@ -68,7 +64,7 @@ const ProductCategories = () => {
         <Layout>
             <div style={{
                 backgroundImage: "linear-gradient(#86b8df,#70a1d3,#0172bc)",
-                height: '100vh', 
+                height: '100vh',
                 padding: 20,
                 boxShadow: 0,
                 borderBottomRightRadius: "25%",
@@ -78,7 +74,7 @@ const ProductCategories = () => {
                     marginTop: 20,
                     "@media only screen and (max-width: 600px)": {
                         marginTop: 2,
-                      
+
                     }
                 }} >
                     <Grid container spacing={2}>
@@ -86,28 +82,40 @@ const ProductCategories = () => {
                             products.map(item => (
                                 <Grid key={item.id} item xs={12} sm={12} md={4} lg={4}>
                                     <Link style={{ cursor: 'pointer', textDecoration: 'none' }} to={`/product/${item.name}`} state={{ data: item }}>
-                                        <StyledPaper elevation={0} sx={{ 
+                                        <StyledPaper elevation={0} sx={{
                                             backgroundColor: item.color,
                                             "@media only screen and (max-width: 600px)": {
-                                            
+
                                             }
-                                             }} >
-                                            <Typography color="white" variant="h4">{item.name}</Typography>
-                                            <Typography color="textSecondary">
+                                        }} >
+                                            <Card sx={{ width: "100%", height: 260, backgroundColor: "inherit" }} elevation={0}>
+                                                <Typography color="white" variant="h4">{item.name}</Typography>
+                                                <Typography color="textSecondary">
 
-                                                {item.description}
-                                            </Typography>
-                                          
-                                            <ArrowForwardIosRounded  sx={{
-                                                display: "none",
-                                                float: "right",
-                                                color:"#7b83eb",
-                                                "&:hover": {
+                                                    {item.description}
+                                                </Typography>
+
+                                            </Card >
+                                            <Button variant="outlined" sx={{
+                                                color: "#000000",
+                                                border: "#ffffff",
+                                                backgroundColor:"#ffffff",
+                                                borderRadius:25,
+                                                width: "100%",
+                                                textTransform:"capitalize"
+                                            }}>
+                                                View More
+                                                <ArrowForwardIosRounded sx={{
                                                     display: "block",
-                                                    color: "#ffffff",
-                                                },
+                                                    float: "right",
+                                                    color: "#7b83eb",
+                                                    "&:hover": {
+                                                        display: "block",
+                                                        color: "#ffffff",
+                                                    },
 
-                                            }} />
+                                                }} />
+                                            </Button>
                                         </StyledPaper >
                                     </Link>
                                 </Grid>

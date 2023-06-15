@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
-import Avatar1 from "../images/avatar1.png"
-import Avatar2 from "../images/avatar2.jpg"
+import Ateam from "../images/groupImage.jpeg"
 import Avatar3 from "../images/avatar3.jpg"
 import { Box, Container, Grid, Typography } from "@mui/material";
 
@@ -52,14 +51,14 @@ const About = () => {
           <Grid item md={6} lg={6} xs={12}>
             <Box
               component={"img"}
-              src={Avatar1}
+              src={Avatar3}
               width={"100%"}
-              height={"250"}
-              sx={{borderRadius:3, border: "solid 1px #000000"}}
+              height={350}
+              sx={{ borderRadius: 3, border: "solid 1px #000000" }}
             />
           </Grid>
-          <Grid item  md={6} lg={6} xs={12}>
-          <Typography color="textPrimary" variant="h4"> Group MD</Typography>
+          <Grid item md={6} lg={6} xs={12}>
+            <Typography color="textPrimary" variant="h4"> Group MD</Typography>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
             deserunt libero reprehenderit cum sint fugit cumque temporibus modi
             facere eveniet amet obcaecati ducimus harum velit maxime vel qui
@@ -75,36 +74,104 @@ const About = () => {
           </Grid>
 
 
-   <br /> <br />
+          <br /> <br />
 
           <Grid marginTop={10} item md={6} lg={6} xs={12}>
-            <Typography color="textPrimary" variant="h4"> Chief Operations</Typography>
-          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-          deserunt libero reprehenderit cum sint fugit cumque temporibus modi
-          facere eveniet amet obcaecati ducimus harum velit maxime vel qui
-          voluptatibus quam odio corrupti saepe, voluptas dolorum quidem
-          tempore? Esse sapiente molestias minus enim quisquam dolorum eum culpa
-          ullam impedit velit quo, corporis ducimus numquam dignissimos
-          inventore maiores. Nam deleniti itaque nostrum neque dolorum dolores,
-          aliquam, voluptatum sapiente doloribus laborum perspiciatis ipsam, quo
-          ut nisi distinctio sunt nihil est blanditiis perferendis eveniet
-          nesciunt! Nostrum, voluptatum eveniet repellat vel officia deleniti
-          tempore voluptatibus perferendis esse eaque temporibus porro?
-          Aspernatur beatae deleniti illo autem!
-          </p>
+            <Typography color="textPrimary" variant="h4"> Head Operations</Typography>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              deserunt libero reprehenderit cum sint fugit cumque temporibus modi
+              facere eveniet amet obcaecati ducimus harum velit maxime vel qui
+              voluptatibus quam odio corrupti saepe, voluptas dolorum quidem
+              tempore? Esse sapiente molestias minus enim quisquam dolorum eum culpa
+              ullam impedit velit quo, corporis ducimus numquam dignissimos
+              inventore maiores. Nam deleniti itaque nostrum neque dolorum dolores,
+              aliquam, voluptatum sapiente doloribus laborum perspiciatis ipsam, quo
+              ut nisi distinctio sunt nihil est blanditiis perferendis eveniet
+              nesciunt! Nostrum, voluptatum eveniet repellat vel officia deleniti
+              tempore voluptatibus perferendis esse eaque temporibus porro?
+              Aspernatur beatae deleniti illo autem!
+            </p>
+          </Grid>
+          <Grid item marginTop={10} md={6} lg={6} xs={12}>
+            <Box
+              component={"img"}
+              src={Avatar3}
+              width={"100%"}
+              height={350}
+              sx={{ borderRadius: 3, border: "solid 1px #000000" }}
+            />
+          </Grid>
+
+
+          <Grid item md={6} lg={6} xs={12}>
+            <Box
+              component={"img"}
+              src={Avatar3}
+              width={"100%"}
+              height={350}
+              sx={{ borderRadius: 3, border: "solid 1px #000000" }}
+            />
+          </Grid>
+          <Grid item md={6} lg={6} xs={12}>
+            <Typography color="textPrimary" variant="h4"> Field Director </Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+            deserunt libero reprehenderit cum sint fugit cumque temporibus modi
+            facere eveniet amet obcaecati ducimus harum velit maxime vel qui
+            voluptatibus quam odio corrupti saepe, voluptas dolorum quidem
+            tempore? Esse sapiente molestias minus enim quisquam dolorum eum culpa
+            ullam impedit velit quo, corporis ducimus numquam dignissimos
+            inventore maiores. Nam deleniti itaque nostrum neque dolorum dolores,
+            aliquam, voluptatum sapiente doloribus laborum perspiciatis ipsam, quo
+            ut nisi distinctio sunt nihil est blanditiis perferendis eveniet
+            nesciunt! Nostrum, voluptatum eveniet repellat vel officia deleniti
+            tempore voluptatibus perferendis esse eaque temporibus porro?
+            Aspernatur beatae deleniti illo autem!
+          </Grid>
+
+          <br /> <br />
+
+          <Grid marginTop={10} item md={6} lg={6} xs={12}>
+            <Typography color="textPrimary" variant="h4"> Head Operations</Typography>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+              deserunt libero reprehenderit cum sint fugit cumque temporibus modi
+              facere eveniet amet obcaecati ducimus harum velit maxime vel qui
+              voluptatibus quam odio corrupti saepe, voluptas dolorum quidem
+              tempore? Esse sapiente molestias minus enim quisquam dolorum eum culpa
+              ullam impedit velit quo, corporis ducimus numquam dignissimos
+              inventore maiores. Nam deleniti itaque nostrum neque dolorum dolores,
+              aliquam, voluptatum sapiente doloribus laborum perspiciatis ipsam, quo
+              ut nisi distinctio sunt nihil est blanditiis perferendis eveniet
+              nesciunt! Nostrum, voluptatum eveniet repellat vel officia deleniti
+              tempore voluptatibus perferendis esse eaque temporibus porro?
+              Aspernatur beatae deleniti illo autem!
+            </p>
+          </Grid>
+          <Grid item marginTop={10} md={6} lg={6} xs={12}>
+            <Box
+              component={"img"}
+              src={Avatar3}
+              width={"100%"}
+              height={350}
+              sx={{ borderRadius: 3, border: "solid 1px #000000" }}
+            />
+          </Grid>
+
+
+          <Grid item marginTop={10} md={12} lg={12} xs={12}>
+          <Typography color="textPrimary" variant="h4"> A Team</Typography>
+          <br></br>
+            <Box
+              component={"img"}
+              src={Ateam}
+              width={"100%"}
+              height={500}
+              sx={{ borderRadius: 3, border: "solid 1px #000000" }}
+            />
+          </Grid>
         </Grid>
-        <Grid item marginTop={10}  md={6} lg={6} xs={12}>
-          <Box
-            component={"img"}
-            src={Avatar2}
-            width={"100%"}
-            height={"200"}
-            sx={{ borderRadius:3, border: "solid 1px #000000"}}
-          />
-        </Grid>
-        </Grid>
-       
+
       </Container>
     </Layout>
   );

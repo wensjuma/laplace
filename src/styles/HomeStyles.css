@@ -112,6 +112,26 @@
   }
 
 }
+h4{
+  position: relative;
+}
+h4:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+h4::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(to left, #9ed5d8, #1a038b 50%);
+  transition: width .5s ease 0s, right .5s ease 0s;
+  width: 0;
+}
 
 
 

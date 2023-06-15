@@ -1,14 +1,9 @@
 
-import { Card, Box, Button, Typography, Grid, TextField, TextareaAutosize, styled } from "@mui/material"
-import { AuthCard, StyledDivider, StyledTextarea } from "../../styles/Styles"
+import { Card, Box, Typography, Grid, styled } from "@mui/material"
+import { StyledDivider, StyledTextarea } from "../../styles/Styles"
 import { StyledTextField, SubmitButton } from "../../styles/Styles"
-import { Link } from "react-router-dom"
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SendIcon from '@mui/icons-material/Send';
-import EmailIcon from '@mui/icons-material/Email';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import FacebookIcon from '@mui/icons-material/Facebook';
+
 import ContactImg from '../../images/mycontact-bg.png'
 import "../../styles/HomeStyles.css"
 import Layout from "../Layout/Layout";
@@ -27,7 +22,7 @@ export const ContactUs = () => {
     return (
         <>
         <Layout>
-        <Grid container spacing={3} sx={{}}>
+        <Grid container spacing={0} sx={{}}>
                 <Grid item xs={1} md={1} lg={1}></Grid>
                 <Grid item xs={12} md={10} lg={10}>
 
@@ -37,7 +32,7 @@ export const ContactUs = () => {
                         backgroundImage: "linear-gradient(#b1f2ff, #5996cd, #3989c7,  #0173bc)"
                         }
                     } elevation={0}>
-                        <Grid container spacing={3}>
+                        <Grid container spacing={2}>
                             <Grid item xs={12} md={6} lg={6}>
                                 <Box
                                 component="img"

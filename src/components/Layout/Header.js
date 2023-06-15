@@ -22,7 +22,7 @@ const Header = () => {
   };
   //menu drawer
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", background: "#3c57a2", minHeight: "100vh" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center",padding:1, background: "#3c57a2", minHeight: "100vh" }}>
       <Typography
         color={"#ffffff"}
         variant="h6"

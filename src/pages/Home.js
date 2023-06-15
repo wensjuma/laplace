@@ -8,7 +8,8 @@ import { Paper, Box } from "@mui/material";
 import Const1 from "../images/Cont4.jpg"
 import Const2 from "../images/Cont5.jpg"
 import Const3 from "../images/Constr6.jpg"
-import Carousel from "react-material-ui-carousel";
+import Carousel from 'react-bootstrap/Carousel';
+import OfficeLocationDetails from "../components/Body/Locations";
 
 const items = [
   {
@@ -30,91 +31,38 @@ const items = [
 const Home = () => {
   return (
     <Layout>
-      {/* <div className="home" style={{
-        backgroundImage: `url(${Sketchy})`,
-        backgroundSize: "cover",
-        backgroundBlendMode: "darken",
-        backgroundColor: "#c0dfc9",
-        border: "1px solid #79987a",
-        height: "852px",
-        borderRadius: 5
-      }}>
-        
-        <Grid container sx={{ margin: 10 }} gap={2}>
-          <Grid item xs={12} md={3}>
-            <Link to="/login" style={{ textDecoration: "none" }}>
-              <Card style={{
-                backgroundImage: `url(${Sketchy1})`,
-                minWidth: "300px",
-                minHeight: "200px",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                border: "1px solid #829e90",
-                padding: 20,
-                borderRadius: 10,
-                display: "flex",
+      <section className="slider">
+        <Carousel>
+          {/* <Carousel.Item className='slide'> */}
+          {items.map((item, index) => (
+            <Carousel.Item key={index} className='slide'>
+              <img
+                style={{
+                  height: 600,
+                  width: "100%",
+                  borderRadius: 5,
+                  background: "linear-gradient(#4d4d4d,#000000, #000000)",
+                  filter: "brightness(40%)",
+                  [`@media only screen and (maxWidth: 500px)`]
+                    : {
+                    height: 400
+                  }
+                }}
+                className="d-block w-80"
+                src={item.img}
 
-              }} elevation={0}>
-                <ArrowForwardIcon />
-                <Typography variant="5px">My Account</Typography>
-              </Card>
-            </Link>
-
-          </Grid>
-          <Grid xs={12} md={3}>
-            <Link to="/menu" style={{ textDecoration: "none" }}>
-              <Card style={{
-                backgroundImage: `url(${Sketchy2})`,
-                minWidth: "300px",
-                minHeight: "200px",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                border: "1px solid #829e90",
-                borderRadius: 10,
-                padding: 20,
-                display: "flex",
-                "&:hover": {
-                  opacity: 0.6,
-                  padding: 50,
-                }
-              }} elevation={0}>
-                <ArrowForwardIcon />
-                <Typography variant="5px">Our Products</Typography>
-              </Card>
-            </Link>
-          </Grid>
-        </Grid>
-        <Grid className="textarea" sx={{ margin: 10, alignContent: "center" }}>
-          <Typography sx={{ marginBottom: 4, color: "#26743a" }} variant="h4">Come for Building Materials
-          </Typography>
-          <Typography sx={{ marginBottom: 4 }} variant="h5">
-            Best Seller
-          </Typography>
-          <br></br>
-          <Link to="/menu">
-            <Button color="success" sx={{ padding: 2, backgroundColor: "#26743a", width: 200, borderRadius: 25 }} variant="contained" >Visit Catalog  <ArrowForwardIcon /> </Button>
-          </Link>
-        </Grid>
-
-      </div> */}
-      <br />
-      <Carousel 
-             autoPlay={true}
-             swipe={true}
-             indicators={true}
-             indicatorContainerProps={{
-               style: {
-                 zIndex: 1,
-                 marginTop: "-20px",
-                 position: "relative"
-               }
-             }} 
-      sx={{ zIndex: "-999" }} >
-        {
-          items.map((item, i) => <Item key={i} item={item} />)
-        }
-
-      </Carousel>
+                alt="Second slide"
+              />
+              <Carousel.Caption>
+                <h3>{item.name}</h3>
+                <p>{item.description}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
+          {/* <Typography>Test text over</Typography> */}
+        </Carousel>
+      </section>
+      <OfficeLocationDetails></OfficeLocationDetails>
       <div style={{ backgroundColor: "#f1f5f8" }}>
         <OurServices />
       </div>
@@ -133,7 +81,7 @@ function Item(props) {
 
     <Paper elevation={0} sx={{
       borderRadius: 4,
-      height:700,
+      height: 700,
       backgroundImage: "linear-gradient(#4d4d4d,#000000, #000000)",
       "@media only screen and (max-width: 600px)": {
         height: 400
@@ -141,21 +89,21 @@ function Item(props) {
       // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`
     }}>
       <Box
-      component="img"
-      alt="Slider"
-      height={700}
-      width={'100%'}
-      src={props.item.img}
-      sx={{
-        borderRadius: 10,
-        opacity: 0.3,
-        "@media only screen and (max-width: 600px)": {
-          height: 350,
-          marginTop:5
-        }
-      }}
+        component="img"
+        alt="Slider"
+        height={700}
+        width={'100%'}
+        src={props.item.img}
+        sx={{
+          borderRadius: 10,
+          opacity: 0.3,
+          "@media only screen and (max-width: 600px)": {
+            height: 350,
+            marginTop: 5
+          }
+        }}
       />
-     
+
       <Card
         sx={{
           marginTop: "-200px",
@@ -169,7 +117,7 @@ function Item(props) {
           "@media only screen and (max-width: 600px)": {
             marginLeft: 2,
             marginRight: 2,
-            height:350,
+            height: 350,
             fontSize: "1pt !important",
             wordSpacing: "1px",
             marginTop: "-400px",
