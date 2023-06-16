@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/laplace/static/css/main.c59da9ed.css",
+    "main.css": "/laplace/static/css/main.e7ff4972.css",
     "main.js": "/laplace/static/js/main.7479c8e7.js",
     "static/js/787.d6034319.chunk.js": "/laplace/static/js/787.d6034319.chunk.js",
     "static/media/profileImage.jpg": "/laplace/static/media/profileImage.b336031de8e710ee963a.jpg",
@@ -26,12 +26,12 @@
     "static/media/nca-license-registration.webp": "/laplace/static/media/nca-license-registration.0b172aca4553235caf61.webp",
     "static/media/contactUsImg.jpg": "/laplace/static/media/contactUsImg.a741d2b0440a51c9d7f1.jpg",
     "index.html": "/laplace/index.html",
-    "main.c59da9ed.css.map": "/laplace/static/css/main.c59da9ed.css.map",
+    "main.e7ff4972.css.map": "/laplace/static/css/main.e7ff4972.css.map",
     "main.7479c8e7.js.map": "/laplace/static/js/main.7479c8e7.js.map",
     "787.d6034319.chunk.js.map": "/laplace/static/js/787.d6034319.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c59da9ed.css",
+    "static/css/main.e7ff4972.css",
     "static/js/main.7479c8e7.js"
   ]
 }
