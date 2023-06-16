@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/laplace/static/css/main.0808cf6e.css",
-    "main.js": "/laplace/static/js/main.158b5fd9.js",
+    "main.css": "/laplace/static/css/main.c59da9ed.css",
+    "main.js": "/laplace/static/js/main.fef5360b.js",
     "static/js/787.d6034319.chunk.js": "/laplace/static/js/787.d6034319.chunk.js",
-    "static/media/groupImage.jpeg": "/laplace/static/media/groupImage.d21d2cc26fe5667f809e.jpeg",
     "static/media/profileImage.jpg": "/laplace/static/media/profileImage.b336031de8e710ee963a.jpg",
+    "static/media/PhoneBooth.jpg": "/laplace/static/media/PhoneBooth.492f5e6aa30662e2b1f5.jpg",
     "static/media/profileImage1.jpg": "/laplace/static/media/profileImage1.49205a074f9886faafda.jpg",
     "static/media/AboutBG1.jpg": "/laplace/static/media/AboutBG1.326d5ce2469a1971ad96.jpg",
     "static/media/blocks.jpg": "/laplace/static/media/blocks.e5f62fa300cd3c2b29e0.jpg",
@@ -24,14 +24,14 @@
     "static/media/construction-site.avif": "/laplace/static/media/construction-site.301a046a6f7c6d22f65a.avif",
     "static/media/designImg.jpg": "/laplace/static/media/designImg.c90d8118ef7c60b5693b.jpg",
     "static/media/nca-license-registration.webp": "/laplace/static/media/nca-license-registration.0b172aca4553235caf61.webp",
-    "static/media/avatar3.jpg": "/laplace/static/media/avatar3.463f823909c29003954c.jpg",
+    "static/media/contactUsImg.jpg": "/laplace/static/media/contactUsImg.a741d2b0440a51c9d7f1.jpg",
     "index.html": "/laplace/index.html",
-    "main.0808cf6e.css.map": "/laplace/static/css/main.0808cf6e.css.map",
-    "main.158b5fd9.js.map": "/laplace/static/js/main.158b5fd9.js.map",
+    "main.c59da9ed.css.map": "/laplace/static/css/main.c59da9ed.css.map",
+    "main.fef5360b.js.map": "/laplace/static/js/main.fef5360b.js.map",
     "787.d6034319.chunk.js.map": "/laplace/static/js/787.d6034319.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0808cf6e.css",
-    "static/js/main.158b5fd9.js"
+    "static/css/main.c59da9ed.css",
+    "static/js/main.fef5360b.js"
   ]
 }
