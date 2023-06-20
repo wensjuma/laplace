@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/laplace/static/css/main.ad80e860.css",
-    "main.js": "/laplace/static/js/main.fad49a8c.js",
+    "main.js": "/laplace/static/js/main.d13d0708.js",
     "static/js/787.d6034319.chunk.js": "/laplace/static/js/787.d6034319.chunk.js",
     "static/media/profileImage.jpg": "/laplace/static/media/profileImage.b336031de8e710ee963a.jpg",
     "static/media/PhoneBooth.jpg": "/laplace/static/media/PhoneBooth.492f5e6aa30662e2b1f5.jpg",
@@ -27,11 +27,11 @@
     "static/media/contactUsImg.jpg": "/laplace/static/media/contactUsImg.a741d2b0440a51c9d7f1.jpg",
     "index.html": "/laplace/index.html",
     "main.ad80e860.css.map": "/laplace/static/css/main.ad80e860.css.map",
-    "main.fad49a8c.js.map": "/laplace/static/js/main.fad49a8c.js.map",
+    "main.d13d0708.js.map": "/laplace/static/js/main.d13d0708.js.map",
     "787.d6034319.chunk.js.map": "/laplace/static/js/787.d6034319.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ad80e860.css",
-    "static/js/main.fad49a8c.js"
+    "static/js/main.d13d0708.js"
   ]
 }
