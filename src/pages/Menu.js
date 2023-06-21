@@ -13,14 +13,13 @@ import {
   Divider,
   Typography,
 } from "@mui/material";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { ArrowBackIosNewRounded, ArrowForwardIos, ArrowForwardIosOutlined, ArrowForwardIosRounded, ArrowForwardIosSharp } from "@mui/icons-material";
+import { ArrowForwardIosRounded } from "@mui/icons-material";
 
 
 const Menu = () => {
   return (
     <Layout>
-      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "flex-start", marginTop: 3 }}>
+      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "flex-start", margin: 3 }}>
         {MenuList.map((menu) => (
           <Link key={menu.name} style={{textDecoration: "none"}}
            to={`/details/${menu.name}`} state={{ data: menu }}>
@@ -30,7 +29,7 @@ const Menu = () => {
               maxHeight: "430px",
               display: "flex",
               border: "1px solid #f7f5f7",
-              m: 2,
+              m: 3,
               borderRadius: 2
             }}>
               <CardActionArea>
@@ -44,7 +43,7 @@ const Menu = () => {
                   <Typography variant="h6" color="textPrimary" gutterBottom component={"div"}>
                     {menu.name}
                   </Typography>
-                  <Typography variant="h6" color="textSecondary" gutterBottom component={"div"}>
+                  <Typography  color="textSecondary">
                     {menu.description}
                   </Typography>
                   <Button />
@@ -52,7 +51,7 @@ const Menu = () => {
                   {/* <Button variant="contained">
 
                 </Button> */}
-                  <Link
+                  <Link style={{textDecoration: "none"}}
                     to={`/details/${menu.name}`} state={{ data: menu }}
                   > <Button sx={{padding: 1, minWidth: 150, borderRadius:25}} color="success" variant="outlined">View Product &nbsp; <ArrowForwardIosRounded /> </Button></Link>
                 </CardContent>

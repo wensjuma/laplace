@@ -1,4 +1,4 @@
-import { Card, Divider, Button, Typography, Grid } from "@mui/material"
+import { Typography, Grid } from "@mui/material"
 import { AuthCard, StyledDivider } from "../../styles/Styles"
 import { StyledTextField, SubmitButton } from "../../styles/Styles"
 import { Link } from "react-router-dom"

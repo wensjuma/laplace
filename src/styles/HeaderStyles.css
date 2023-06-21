@@ -21,9 +21,11 @@
 .mobile-navigation {
   list-style: none;
   background-color: #3c57a2;
+  /* font-weight: bold; */
 }
 .mobile-navigation li {
   margin-top: 20px;
+  /* font-weight: bold; */
 }
 .mobile-navigation li a {
   text-decoration: none;

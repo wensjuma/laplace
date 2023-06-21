@@ -5,18 +5,16 @@ import {
     Grid,
     CardContent,
     Typography,
-    Modal,
     Box,
     CardMedia,
     Card,
     CardActionArea,
     Button,
     Divider,
-    TextField,
     Dialog
 } from "@mui/material";
 import { useState, useEffect } from "react";
-import { StyledDivider, SubmitButton,MoreButton, StyledTextField } from "./../styles/Styles";
+import { StyledDivider, SubmitButton, MoreButton, StyledTextField } from "./../styles/Styles";
 
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
@@ -25,20 +23,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 import UploadFileIcon from '@mui/icons-material/UploadFile';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-// import {} from '@material-ui/icons';
 
-
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-};
 
 const Details = (props) => {
 
@@ -56,22 +41,16 @@ const Details = (props) => {
         }
     }, [selectedImage]);
 
-
     const handleClickOpen = () => {
         setOpen(true);
     };
     // imageUrl
     console.log(imageUrl);
-    const getUploaded = (files) => {
-
-        // Update chosen files
-        // setFilesToUpload([ ...files ])
-    };
 
     return (
         <Layout>
 
-            <Grid container sx={{ marginTop: 5 }} flex={1} spacing={2}>
+            <Grid container sx={{ marginTop: 5, "@media only screen and (max-width: 600px)": { padding: 2 }}} flex={1} spacing={2}>
                 <Grid item xs={1} md={2} lg={2}>
 
                 </Grid>
@@ -94,9 +73,9 @@ const Details = (props) => {
                             <CardContent>
                                 <Typography variant="h6" color="textPrimary" gutterBottom component={"div"}>
 
-                                    <Link to={`https://api.whatsapp.com/send?phone=254717649909&text=${"Hi, I would like to make an inquiry about *"+menu.name +' @ '+ menu.price+'*'}`}>
+                                    <Link to={`https://api.whatsapp.com/send?phone=254717649909&text=${"Hi, I would like to make an inquiry about *" + menu.name + ' @ ' + menu.price + '*'}`}>
                                         <MoreButton color="success" sx={{ padding: 2, borderRadius: 10 }} variant="outlined">
-                                            <WhatsAppIcon sx={{"&:hover":{color: '#ffffff'}}} color="success" /> &nbsp; WhatsApp Us
+                                            <WhatsAppIcon sx={{ "&:hover": { color: '#ffffff' } }} color="success" /> &nbsp; WhatsApp Us
                                         </MoreButton>
                                     </Link>
                                 </Typography>
@@ -113,17 +92,17 @@ const Details = (props) => {
 
                     <Typography color="textSecondary">
                         {menu.description}
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                        pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum."
                         <StyledDivider sx={{ margin: 2 }}></StyledDivider>
 
                         <MoreButton color="success" sx={{ padding: 1, width: 150, borderRadius: 25 }} onClick={handleClickOpen} variant="outlined">
-                            Engage
+                            Get Quote
                         </MoreButton>
                     </Typography>
                 </Grid>
@@ -131,7 +110,7 @@ const Details = (props) => {
 
                 </Grid>
             </Grid>
-            <Dialog sx={{ padding: 10, "@media only screen and (max-width: 600px)":{padding: 1}  }} open={open} onClose={handleClose}>
+            <Dialog sx={{ padding: 10, width:"100%", "@media only screen and (max-width: 600px)": { padding: 1 } }} open={open} onClose={handleClose}>
                 <DialogTitle>Engage our team for {menu.name} Quotations</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
@@ -185,7 +164,7 @@ const Details = (props) => {
                 <DialogActions>
                     {/* <Button variant="text" onClick={handleClose}>Cancel</Button> */}
 
-                    <SubmitButton color="success" variant="outlined" sx={{ padding: 1, width: "100%" }} onClick={handleClose}>Submit</SubmitButton>
+                    <SubmitButton color="success" variant="outlined" sx={{ padding: 1, width: "100%", color:"green" }} onClick={handleClose}>Submit</SubmitButton>
                 </DialogActions>
             </Dialog>
 

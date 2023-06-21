@@ -8,7 +8,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import Logo from "../../images/laplaceLogo.jpeg"
+import Logo from "../../images/laplaceLogo.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyles.css";
@@ -22,14 +22,14 @@ const Header = () => {
   };
   //menu drawer
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center",padding:1, background: "#3c57a2", minHeight: "100vh" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center", padding: 1, background: "#3c57a2", minHeight: "100vh" }}>
       <Typography
         color={"#ffffff"}
         variant="h6"
         component="div"
         sx={{ flexGrow: 1, my: 2 }}
       >
-        <img src={Logo} style={{ borderRadius: 50, backgroundSize: "cover" }} alt="logo" height={"60"} width="110" />
+        <img src={Logo} style={{ borderRadius: 50, backgroundSize: "cover" }} alt="logo" height={"80"} width="110" />
       </Typography>
       <Divider />
       <ul className="mobile-navigation">
@@ -45,6 +45,9 @@ const Header = () => {
           <NavLink to={"/about"}>About</NavLink>
         </li>
         <li>
+          <NavLink to={"/contact"}>Contact Us</NavLink>
+        </li>
+        <li>
           <NavLink to={"https://api.whatsapp.com/send?phone=254717649909"}>
             <Typography className="contacts"> <WhatsApp className="icon" /> +2547-17-649-909</Typography>
           </NavLink>
@@ -55,7 +58,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink>
-              <Typography className="contacts" variant="h6"><EmailRounded className="icon" /> email@laplace.com</Typography>
+              <Typography className="contacts" variant="h6"><EmailRounded className="icon" /> email@eco.com</Typography>
             </NavLink>
           </li>
         </li>
@@ -85,13 +88,13 @@ const Header = () => {
               component="div"
               sx={{ flexGrow: 1 }}
             >
-              {/* <img src={Logo} style={{ borderRadius: 50, backgroundSize: "cover" }} alt="logo" height={"60"} width="110" /> */}
+              <img src={Logo} style={{ borderRadius: 50, backgroundSize: "cover" }} alt="logo" height={"70"} width="110" />
               <strong style={{
                 paddingBottom: "70px !important",
                 lineHeight: 3,
-                color:"#ebebeb",
+                color: "#ebebeb",
                 fontSize: 25,
-                marginLeft: "20%"
+                marginLeft: "8%"
               }}>  ECODECK </strong>
             </Typography>
 
@@ -110,7 +113,7 @@ const Header = () => {
                   <NavLink to={"/about"}>About</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/contact"}>Contact</NavLink>
+                  <NavLink to={"/contact"}>Contact Us</NavLink>
                 </li>
                 <li>
                   <NavLink>
@@ -126,7 +129,7 @@ const Header = () => {
                 </li>
                 <li>
                   <NavLink>
-                    <Typography className="contacts" variant="h6"><EmailRounded className="icon" /> email@laplace.com</Typography>
+                    <Typography className="contacts" variant="h6"><EmailRounded className="icon" /> email@eco.com</Typography>
                   </NavLink>
                 </li>
               </ul>

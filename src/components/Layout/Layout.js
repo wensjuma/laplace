@@ -1,5 +1,5 @@
 import React from "react";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 import Header from "./Header";
 import { useRef } from "react";
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
@@ -11,14 +11,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <div style={{ margin: "20px" }}>{children}</div>
-      {/* <button onClick={handleMinimize}> Minimize the Chat </button> */}
-
+      <div style={{ margin: "0px", clear:"both", minHeight:800 }}>{children}</div>
       <TawkMessengerReact
         propertyId="6488cbbacc26a871b0225767"
         widgetId="1h2r5nl3f"
         ref={tawkMessengerRef} />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

@@ -59,8 +59,14 @@
   color: "#26743a";
   font-family: "cursive";
 }
-.icon{
+.icon {
   vertical-align: middle;
+  color: #a0d6da;
+}
+.contacts{
+  color: #a0d6da;
+  font-weight: bold !important;
+  /* font-style: oblique; */
 }
 
 /* mobile view  */
@@ -110,9 +116,8 @@
     color: #121619;
     margin-bottom: 30px;
   }
-
 }
-h4{
+h4 {
   position: relative;
 }
 h4:hover::after {
@@ -129,11 +134,9 @@ h4::after {
   right: 0;
   position: absolute;
   background: linear-gradient(to left, #9ed5d8, #1a038b 50%);
-  transition: width .5s ease 0s, right .5s ease 0s;
+  transition: width 0.5s ease 0s, right 0.5s ease 0s;
   width: 0;
 }
-
-
-
-
-
+.iconC {
+  color: #3c57a2;
+}

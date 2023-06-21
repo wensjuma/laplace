@@ -12,7 +12,7 @@ import { Login } from "./pages/auth/Login";
 import ViewProduct from "./components/Products/ViewProduct"
 function App() {
   return (
-    <div style={{backgroundColor:"#a0d6da"}}>
+    <div style={{backgroundColor:"#f5f9fc", minHeight:"100%"}}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

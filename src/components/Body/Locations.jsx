@@ -1,6 +1,6 @@
 import { Card, Grid, Typography } from "@mui/material";
 import "../../styles/HomeStyles.css";
-import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
+import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 import { useMemo } from "react";
 
 const OfficeLocationDetails = () => {
@@ -27,9 +27,9 @@ const OfficeLocationDetails = () => {
 
                                 <br></br>
                                 <Typography color="textSecondary" variant="h6">
-                                    ours@ecodeck.co.ke <br></br>
-                                    +254709876434 <br></br>
-                                    Along Nairobi ~ Kenyatta Avenue
+                                   <strong>Email </strong>: ours@ecodeck.co.ke <br></br>
+                                   <strong>Tel.</strong>: +254709876434 <br></br>
+                                   <strong>Address</strong>: Along Nairobi ~ Kenyatta Avenue
                                 </Typography>
                             </Grid>
                             <Grid item xm={12} sm={12} md={6} lg={6}>

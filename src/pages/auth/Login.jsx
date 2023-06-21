@@ -1,11 +1,10 @@
 
 
-import { Card, Divider, Button, Typography, Grid } from "@mui/material"
+import { Typography, Grid } from "@mui/material"
 
 import { StyledTextField, AuthCard, SubmitButton, StyledDivider } from "../../styles/Styles"
 import { Link } from "react-router-dom"
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-// import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 
 export const Login = () => {
