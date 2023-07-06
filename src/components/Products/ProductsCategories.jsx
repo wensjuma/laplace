@@ -9,28 +9,40 @@ import Floor from "../../images/floors.jpg"
 
 const products = [
     {
-        name: "Walls",
-        description: ` Lore is a body of knowledge or tradition that is passed down among members of a culture, usually orally. It's the lore in "folklore," and responsible for spreading the
-        word on mythical figures like Santa Claus, Paul Bunyan, and even Uncle Sam.`,
+        name: "Supply and Install",
+        description: `Take full advantage of our:
+        Transportation
+        Installation
+        Hoisting Services
+        
+        Eco Deck ensures efficiency and safety during the supply and installation. Handling Beam and Block technology is an easy task, but in the hands of ignorance, it can turn into a deadly weapon. The entire process, from loading, transportation, offloading, and installation, needs to be precisely executed to ensure the safety of all personnel.
+        
+        Furthermore, when done with limited experience, it usually translates into a tedious process. Worry not, for we have the full solution available.`,
         id: "1",
         color: "#adafb0",
         image: Precast
     },
     {
-        name: " Beam & Blocks",
-        description: `Beam and block is a construction method to support flooring,
-        especially for ground floors as well as multi story buildings.
-        It is made of cast concrete, one piece of which is a prestressed
-        concrete beam, which can be an inverted
-        T-shaped beam, or lintel, the other piece being a simple rectangular block`,
+        name: "Beam and Block Technology",
+        description: `At Eco Deck, let us help you answer these questions: 
+        Is Beam and Block cost-effective? Is it safe? Is it durable?
+        
+        Eco Deck introduces the new self-supporting slab system. Beam and block flooring have been used for decades in construction. The technology is gaining daily traction in the built environment as many professionals and local authorities have started to understand and appreciate the technology.
+        
+        To take full advantage, visit Eco Deck and have your house designs approved by the NCA and county authorities using beam and block technology. Build it with a Sovereign warranty.`,
         id: "2",
         color: "#2eb2e4",
         image: BeamBlock
     },
     {
-        name: "Floors",
-        description: `Lore is a body of knowledge or tradition that is passed down among members of a culture, usually orally. It's the lore in "folklore," and responsible for spreading the
-        word on mythical figures like Santa Claus, Paul Bunyan, and even Uncle Sam.`,
+        name: "Shell and Core",
+        description: `Design it all; have your skeleton done with us!
+        Are you looking to save on slabs? What if we can extend the savings to the footings, columns, and beams? Performance, cost, and efficiency are central to the decision-making process before any build. With a 30% reduced weight on all floors, you can introduce 1 or 2 more storeys compared to the initial conventional design. Alternatively, for limited-height houses, you can reduce the amount of:
+        - Steel reinforcement
+        - Concrete
+        - Labor
+        
+        Save more on the entire build with us.`,
         id: "3",
         color: "#2e7d32",
         image: Floor
@@ -68,7 +80,11 @@ const ProductCategories = () => {
                 padding: 20,
                 boxShadow: 0,
                 borderBottomRightRadius: "25%",
-                borderTopLeftRadius: "25%"
+                borderTopLeftRadius: "25%",
+                "@media only screen and (max-width: 600px)": {
+                    marginBottom: 100,
+
+                }
             }}>
                 <Container sx={{
                     marginTop: 20,
@@ -85,11 +101,15 @@ const ProductCategories = () => {
                                         <StyledPaper elevation={0} sx={{
                                             backgroundColor: item.color,
                                             "@media only screen and (max-width: 600px)": {
-
+                                                height: 180,
+                                                padding: 2,
+                                                width: "100%",
+                                                borderRadius: 3
                                             }
                                         }} >
                                             <Card sx={{ width: "100%", height: 260, backgroundColor: "inherit" }} elevation={0}>
-                                                <Typography color="white" variant="h4">{item.name}</Typography>
+                                                <Typography color="white" variant="h5">{item.name}</Typography>
+                                                <br />
                                                 <Typography color="textSecondary">
 
                                                     {item.description}
@@ -99,10 +119,10 @@ const ProductCategories = () => {
                                             <Button variant="outlined" sx={{
                                                 color: "#000000",
                                                 border: "#ffffff",
-                                                backgroundColor:"#ffffff",
-                                                borderRadius:25,
+                                                backgroundColor: "#ffffff",
+                                                borderRadius: 25,
                                                 width: "100%",
-                                                textTransform:"capitalize"
+                                                textTransform: "capitalize"
                                             }}>
                                                 View More
                                                 <ArrowForwardIosRounded sx={{
@@ -125,6 +145,19 @@ const ProductCategories = () => {
                     </Grid>
                 </Container>
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </Layout>
     )
 }

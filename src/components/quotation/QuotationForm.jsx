@@ -77,7 +77,7 @@ const QuotationForm = () => {
                                 <label> Which Product are you interested in? </label>
                                 <FormGroup>
                                     <FormControlLabel control={<Checkbox />} label="BEAM & BLOCK" />
-                                    <FormControlLabel control={<Checkbox />} label="ROBUST UPPER FLOORS" />
+                                    <FormControlLabel control={<Checkbox />} label="SHELL & CORE" />
                                     <FormControlLabel control={<Checkbox />} label="ANCILLARIES" />
 
                                 </FormGroup>

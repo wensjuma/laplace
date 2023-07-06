@@ -9,7 +9,11 @@ const ViewProduct = () => {
     return (
         <Layout>
             <div style={{ backgroundColor: "#f5f5f5" }}>
-                <Container sx={{ backgroundColor: "#ffffff", marginTop: 10, padding: 10 }} >
+                <Container sx={{ backgroundColor: "#ffffff", marginTop: 10, padding: 10,
+               "@media only screen and (max-width: 600px)": {
+                padding: 4,
+                borderRadius: 3
+            } }} >
                     <Grid container>
                         <Grid item xs={12} sm={12} md={7} lg={7}>
                             <Box
@@ -25,9 +29,10 @@ const ViewProduct = () => {
                         </Grid>
                         <Grid item xs={12} sm={12} md={5} lg={5}>
                             <Card elevation={0}>
-                                <Typography align="center" color="textPrimary" variant="h4">
+                                <Typography align="center" color="textPrimary" variant="h5">
                                     {stateData.name}
                                 </Typography>
+                                <br />
                                 <Typography align="center" color="textSecondary">
                                     {stateData.description}
                                 </Typography>
@@ -35,7 +40,7 @@ const ViewProduct = () => {
                         </Grid>
                     </Grid>
                     <Container sx={{ backgroundColor: "f5f5f5" }}>
-                        <Link to="/get-quotation">
+                        <Link style={{textDecoration: "none"}} to="/get-quotation">
                             <SubmitButton sx={{ color: "#2e7d32" }} color="success" variant="outlined">Quick Quote</SubmitButton>
                         </Link>
                     </Container>
