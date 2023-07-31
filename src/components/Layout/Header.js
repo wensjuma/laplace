@@ -12,8 +12,7 @@ import Logo from "../../images/laplaceLogo.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyles.css";
-import { EmailRounded, WhatsApp } from "@mui/icons-material";
-import PhoneIcon from '@mui/icons-material/Phone';
+
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   // hndle menu click
@@ -29,7 +28,7 @@ const Header = () => {
         component="div"
         sx={{ flexGrow: 1, my: 2 }}
       >
-        <img src={Logo} style={{ borderRadius: 50, backgroundSize: "cover" }} alt="logo" height={"80"} width="110" />
+        {/* <img src={Logo} style={{ borderRadius: 50, backgroundSize: "cover" }} alt="logo" height={"80"} width="110" /> */}
       </Typography>
       <Divider />
       <ul className="mobile-navigation">
@@ -38,16 +37,16 @@ const Header = () => {
             Home
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to={"/products"}>Products</NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to={"/about"}>About</NavLink>
         </li>
         <li>
           <NavLink to={"/contact"}>Contact Us</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to={"https://api.whatsapp.com/send?phone=254717649909"}>
             <Typography className="contacts"> <WhatsApp className="icon" /> +2547-17-649-909</Typography>
           </NavLink>
@@ -61,7 +60,7 @@ const Header = () => {
               <Typography className="contacts" variant="h6"><EmailRounded className="icon" /> email@eco.com</Typography>
             </NavLink>
           </li>
-        </li>
+        </li> */}
       </ul>
     </Box>
   );
@@ -88,14 +87,14 @@ const Header = () => {
               component="div"
               sx={{ flexGrow: 1 }}
             >
-              <img src={Logo} style={{ borderRadius: 50, backgroundSize: "cover" }} alt="logo" height={"70"} width="110" />
+              {/* <img src={Logo} style={{ borderRadius: 50, backgroundSize: "cover" }} alt="logo" height={"70"} width="110" /> */}
               <strong style={{
                 paddingBottom: "70px !important",
-                lineHeight: 3,
+                lineHeight: 1.5,
                 color: "#ebebeb",
-                fontSize: 25,
-                marginLeft: "8%"
-              }}>  ECODECK </strong>
+                fontSize: 22,
+                marginLeft: "2%"
+              }}>  W.K HIGH SCHOOL  </strong>
             </Typography>
 
 
@@ -106,32 +105,31 @@ const Header = () => {
                     Home
                   </NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink to={"/products"}>Our Products</NavLink>
-                </li>
+                </li> */}
                 <li>
                   <NavLink to={"/about"}>About</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/contact"}>Contact Us</NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink>
                     <Typography className="contacts" > <PhoneIcon className="icon" /> +2547-17-649-909</Typography>
                   </NavLink>
                 </li>
                 <li>
                   <NavLink to={"https://api.whatsapp.com/send?phone=254717649909"}>
-                    {/* <Typography sx={{ color: "#0172bc" }}> <CallEndRounded /> +2547-17-649-909</Typography> */}
+                   
                     <Typography className="contacts" >  <WhatsApp className="icon" sx={{ verticalAlign: "bottom" }} />  +2547-17-649-909</Typography>
                   </NavLink>
-                  {/* <Typography variant="h6" sx={{ color: "#2e7d32" }}> <WhatsApp /> +2547-17-649-909</Typography> */}
                 </li>
                 <li>
                   <NavLink>
                     <Typography className="contacts" variant="h6"><EmailRounded className="icon" /> email@eco.com</Typography>
                   </NavLink>
-                </li>
+                </li> */}
               </ul>
             </Box>
           </Toolbar>

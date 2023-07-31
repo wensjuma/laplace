@@ -23,13 +23,13 @@ const OfficeLocationDetails = () => {
                     >
                         <Grid container spacing={2}>
                             <Grid item xm={12} sm={12} md={6} lg={6}>
-                                <h4 style={{ textAlign: "center" }}>Ecodeck Office Location</h4>
+                                <h3 style={{ textAlign: "center" }}>Where are we located?</h3>
 
                                 <br></br>
                                 <Typography color="textSecondary" variant="h6">
-                                   <strong>Email </strong>: ours@ecodeck.co.ke <br></br>
+                                   <strong>Email </strong>: ours@wkh.co.ke <br></br>
                                    <strong>Tel.</strong>: +254709876434 <br></br>
-                                   <strong>Address</strong>: Along Nairobi ~ Kenyatta Avenue
+                                   <strong>Address</strong>: Along KTL-BGM road ~ Kamukuywa
                                 </Typography>
                             </Grid>
                             <Grid item xm={12} sm={12} md={6} lg={6}>

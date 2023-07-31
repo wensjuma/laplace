@@ -10,20 +10,20 @@ import OfficeLocationDetails from "../components/Body/Locations";
 
 const items = [
   {
-    name: "Building Materials",
+    name: "Our Mission",
     img: Const1,
     description: `
     Upgrade your construction projects with Eco Deck - the precast beam and block slab designed to provide a safe, secure and cost-effective flooring for residential and commercial buildings. `
   },
   {
-    name: "Architectural Designs",
+    name: "Vission",
     img: Const2,
     description: `  There is a lot of detail that goes into designing an architectural project. Each step of the project is carefully thought out for safety and day to day comfort, we call this flow. What is architectural design? And what is involved in the design process?
 
     `
   },
   {
-    name: "Building Quotations",
+    name: "School Motto",
     img: Const3,
     description: `A construction quotation is a document sent by a construction company or firm to their clients for the discussion of the items, materials, and workforce that need to be paid. Since a Quotation is just an initial list.`
   }
@@ -60,7 +60,7 @@ const Home = () => {
                 alt="Second slide"
               />
               <Carousel.Caption>
-                <h3>{item.name}</h3>
+                <h3><strong>{item.name}</strong></h3>
                 <p>{item.description}</p>
               </Carousel.Caption>
             </Carousel.Item>
